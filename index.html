@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DORY DELIVERY - Fast Food Delivery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                display: none;
+                /* Add hamburger menu for full functionality */
+            }
+
+            .steps {
+                flex-direction: column;
+            }
+
+            .app-buttons {
+                flex-direction: column;
+            }
+
+            footer .container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">DORY DELIVERY</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#testimonials">Feedback</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <video autoplay muted loop>
+            <source src="0216.mp4" type="video/mp4">
+            <!-- Fallback image if video doesn't load -->
+            <img src="https://via.placeholder.com/1200x800?text=Delicious+Food" alt="Delicious Food"
+                style="width: 100%; height: 100%; object-fit: cover;">
+        </video>
+        <div class="hero-content">
+            <h1>Delicious Food, Delivered Fast</h1>
+            <p>Order from your favorite restaurants and enjoy hot, fresh meals at your doorstep in minutes.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.groceria" class="btn">Order Now</a>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <i class="fas fa-search"></i>
+                    <h3>Choose Your Meal</h3>
+                    <p>Browse thousands of restaurants and select your favorite dishes.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Place Your Order</h3>
+                    <p>Pay securely and track your order in real-time.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-truck"></i>
+                    <h3>Enjoy Delivery</h3>
+                    <p>Get fresh food delivered hot and fast to your door.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose DORY DELIVERY?</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Lightning Fast Delivery</h3>
+                    <p>Get your food in under 30 minutes with our express service.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Wide Variety</h3>
+                    <p>Choose from thousands of restaurants and cuisines worldwide.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-star"></i>
+                    <h3>Top Quality</h3>
+                    <p>Fresh ingredients and chef-prepared meals every time.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Easy App</h3>
+                    <p>Order on the go with our user-friendly mobile app.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Payments</h3>
+                    <p>Safe and encrypted transactions for peace of mind.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our team is here to help anytime, day or night.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download-app">
+        <div class="container">
+            <h2>Download Our App</h2>
+            <p>Get exclusive deals and faster ordering with the DORY DELIVERY app.</p>
+            <div class="app-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.groceria" class="app-btn">Get it on Google
+                    Play</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"DORY DELIVERY made my dinner night amazing! So quick and tasty."</p>
+                    <cite>- juswa.</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Best delivery service ever. Always on time and delicious."</p>
+                    <cite>- rjon.</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Love the variety. Found my new favorite pizza place through them."</p>
+                    <cite>- cdey.</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"The app is so easy to use. Highly recommend!"</p>
+                    <cite>- yel.</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Fresh food every time. Never disappointed."</p>
+                    <cite>- raizen.</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Great customer support. Solved my issue in minutes."</p>
+                    <cite>- zabdie.</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Email Submission Form</title>
+        </head>
+
+        <body>
+            <div class="container">
+                <div class="newsletter">
+                    <h3>Stay Updated</h3>
+
+                    <form action="https://formspree.io/f/mnjbdkrw" method="POST">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                        <div><h3>Add Comment</h3> 
+                            <textarea id="comment" name="comment" rows="4" cols="50"
+                                placeholder="Enter your comment here..."></textarea>
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div id="message"></div>
+                    <script>
+                        document.getElementById('emailForm').addEventListener('submit', function (event) {
+                            event.preventDefault(); // Prevent the form from submitting to a server
+
+                            const email = document.getElementById('email').value;
+                            const messageDiv = document.getElementById('message');
+
+                            // Simple email validation regex (basic check for @ and a domain)
+                            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                            if (emailRegex.test(email)) {
+                                messageDiv.textContent = 'Success';
+                                messageDiv.style.color = 'green';
+                            } else {
+                                messageDiv.textContent = 'Error';
+                                messageDiv.style.color = 'red';
+                            }
+                        });
+                    </script>
+        </body>
+
+        </html>
+
+        </div>
+        <p>&copy; 2026 DORY DELIVERY. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Add FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>
